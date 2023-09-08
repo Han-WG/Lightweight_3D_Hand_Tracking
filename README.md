@@ -27,6 +27,7 @@ In the `main` folder, run test.py
 python test.py --gpu 0-3 --test_epoch 0/1
 ```
 to test the network on the GPU 0,1,2,3 with `snapshot_{0/1}.pth`.  `--gpu 0,1,2,3` can be used instead of `--gpu 0-3`.
+
 0: the best model    1 : the final model
 
 ### ToONNX
