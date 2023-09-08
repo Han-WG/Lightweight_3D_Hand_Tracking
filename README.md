@@ -24,9 +24,10 @@ Place trained model at the `output/model_dump/`.
 
 In the `main` folder, run test.py
 ```bash
-python test.py --gpu 0-3 --test_epoch 20
+python test.py --gpu 0-3 --test_epoch 0/1
 ```
-to test the network on the GPU 0,1,2,3 with `snapshot_20.pth`.  `--gpu 0,1,2,3` can be used instead of `--gpu 0-3`.
+to test the network on the GPU 0,1,2,3 with `snapshot_{0/1}.pth`.  `--gpu 0,1,2,3` can be used instead of `--gpu 0-3`.
+0: the best model    1 : the final model
 
 ### ToONNX
 In the `main` folder, run toonnx.py
